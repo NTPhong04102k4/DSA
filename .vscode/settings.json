@@ -1,0 +1,22 @@
+{
+  "java.home": "",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.format.settings.url": "",
+  "java.format.settings.profile": "",
+  "java.completion.enabled": true,
+  "java.debug.settings.enableRunDebugCodeLens": true,
+  "java.test.config": {
+    "vmargs": ["-ea"]
+  },
+  "java.project.sourcePaths": [
+    "JavaCore",
+    "JavaOOP",
+    "Sort",
+    "String",
+    "Graph",
+    "Search"
+  ],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"]
+}
