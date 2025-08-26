@@ -2,7 +2,7 @@ package SelectionSort;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
+        int[] arr = { 64, 34, 25, 12, 11, 22, 11, 90 };
 
         System.out.println("Array before sorting:");
         printArray(arr);
@@ -15,20 +15,20 @@ public class SelectionSort {
 
     public static void selectionSort(int[] arr) {
         int n = arr.length;
-
-        for (int i = 0; i < n - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
+        if (n == 0 || arr == null) {
+            System.out.println("Arr must to have element");
+            return;
+        }
+        for (int i = 0; i < n; i++) {
+            int indexMin = i;
+            for (int idx = i; idx < n; idx++) {
+                if (arr[indexMin] > arr[idx]) {
+                    indexMin = idx;
                 }
             }
-            int temp = arr[minIndex];
-            arr[minIndex] = arr[i];
-            arr[i] = temp;
-
-            System.out.println("Step " + (i + 1) + ":");
-            printArray(arr);
+            int temp = arr[i];
+            arr[i] = arr[indexMin];
+            arr[indexMin] = temp;
         }
     }
 
