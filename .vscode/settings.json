@@ -18,5 +18,6 @@
     "Search"
   ],
   "java.project.outputPath": "bin",
-  "java.project.referencedLibraries": ["lib/**/*.jar"]
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "editor.formatOnSave": true
 }
