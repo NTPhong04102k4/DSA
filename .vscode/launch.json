@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SelectionSort",
+      "request": "launch",
+      "mainClass": "SelectionSort.SelectionSort",
+      "projectName": "Personal_12a01a4b"
+    },
+    {
+      "type": "java",
+      "name": "InsertSorf",
+      "request": "launch",
+      "mainClass": "InsertSort.InsertSorf",
+      "projectName": "Personal_12a01a4b"
+    },
+    {
+      "type": "java",
       "name": "Launch Current File",
       "request": "launch",
       "mainClass": "${fileBasenameNoExtension}",
