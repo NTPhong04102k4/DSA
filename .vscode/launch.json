@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "SelectionSort",
+      "request": "launch",
+      "mainClass": "SelectionSort.SelectionSort",
+      "projectName": "Personal_12a01a4b"
+    },
+    {
+      "type": "java",
+      "name": "InsertSorf",
+      "request": "launch",
+      "mainClass": "InsertSort.InsertSorf",
+      "projectName": "Personal_12a01a4b"
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false
+    },
+    {
+      "type": "java",
+      "name": "Debug Current File",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": true
+    },
+    {
+      "type": "java",
+      "name": "Launch with Arguments",
+      "request": "launch",
+      "mainClass": "${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole"
+    }
+  ]
+}
