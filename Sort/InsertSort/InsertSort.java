@@ -1,6 +1,6 @@
 package InsertSort;
 
-public class InsertSorf {
+public class InsertSort {
 
     public static void main(String[] args) {
         int[] a = { 10, 50, 20, 5, 5, 1, 0 };
