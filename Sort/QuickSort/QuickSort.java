@@ -1,33 +1,33 @@
 package QuickSort;
 
 public class QuickSort {
-    public static void quickSort(int[] arr, int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
+    public static void quickSort(int[] a, int left, int right) {
+        if (left < right) {
+            int pivotIdx = pagination(a, left, right);
+            quickSort(a, left, pivotIdx - 1);
+            quickSort(a, pivotIdx + 1, right);
         }
     }
 
-    private static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) {
-                i++;
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+    public static int pagination(int[] a, int left, int right) {
+        int pivot = a[right];
+        int idxOfPivot = left - 1;
+        for (int i = left; i < right; i++) {
+            if (a[i] <= pivot) {
+                idxOfPivot++;
+                int temp = a[idxOfPivot];
+                a[idxOfPivot] = a[i];
+                a[i] = temp;
             }
         }
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-        return i + 1;
+        int temp = a[idxOfPivot + 1];
+        a[idxOfPivot + 1] = a[right];
+        a[right] = temp;
+        return idxOfPivot + 1;
     }
 
     public static void main(String[] args) {
-        int[] arr = { 10, 7, 8, 9, 1, 5 };
+        int[] arr = { 8, 50, 5, 9, 1, 7, 12 };
         quickSort(arr, 0, arr.length - 1);
         for (int num : arr) {
             System.out.print(num + " ");
